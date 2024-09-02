@@ -1,0 +1,69 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Austin Anthony",
+    "motivations": "New systems to drive the change the world needs. Bring honesty, integrity, and accountability to these systems that are so critical for a large amount of individuals. ",
+    "objectives": "To uphold the Cardano Constitution and to always achieve and stride for high security and decentralization. Always. ",
+    "paymentAddress": "addr_test1qqy25rzhn6de34dgtzwzjvuq75qar7n4gam8lh8vwykywyy654tma703zkcnxamx8ej2awqqzta7ljznq0h276zjeqlsk8gpda",
+    "qualifications": "Constitutionalist and Freedom fighter. I have been in the blockchain space since 2014 and was an investor in Cardano from year one in 2017.  I have a diverse knowledge set for all blockchains and have followed the industry closely for nearly a decade. I am a Project Mananger for an electrical company and know how to mange and run operations. I will always continue to learn and grow. ",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://x.com/CardanoDrep"
+      }
+    ]
+  }
+}
